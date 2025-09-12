@@ -1,20 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Développeur Web Junior</title>
 
-    <!-- CSS Bootstrap 5 -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS Bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>CV - Vingataramin Ludovic</title>
+    <!-- ICONS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #212529;
+        }
+        .container {
+            max-width: 900px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 3rem auto;
+        }
+        .left-column {
+            background-color: #f1f3f5; /* fond gris très doux */
+            border-radius: 8px;
+            padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+            height: 100%;
+        }
+        .section-title {
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #495057;
+        }
+        .skill-badge {
+            background-color: #dee2e6;
+            color: #495057;
+            margin: 0 0.4rem 0.4rem 0;
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 0.35em 0.65em;
+            border-radius: 0.25rem;
+            display: inline-block;
+        }
+        .header-name {
+            font-weight: 700;
+            font-size: 2.8rem;
+            color: #343a40;
+            margin-bottom: 0.25rem;
+        }
+        .header-title {
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+        }
+        .header-description {
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+        .contact-info i {
+            color: #0d6efd;
+            margin-right: 0.5rem;
+        }
+        .contact-info li {
+            margin-bottom: 0.6rem;
+            font-size: 0.9rem;
+        }
+        .section-content ul, .section-content p {
+            font-size: 0.95rem;
+            color: #343a40;
+        }
+        .project-title, .experience-title {
+            font-weight: 600;
+            color: #0d6efd;
+            margin-bottom: 0.3rem;
+        }
+        .technology-list {
+            margin-bottom: 1.5rem;
+        }
+        .technology-item {
+            margin: 0.2rem 0;
+            font-weight: 500;
+            color: #495057;
+            font-size: 0.95rem;
+        }
+        /* Responsive columns: 1 column on small devices */
+        @media (max-width: 767.98px) {
+            .row-cols-responsive {
+                display: block !important;
+            }
+            .left-column {
+                border-radius: 8px 8px 0 0;
+                padding-bottom: 1rem;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1 class="text-primary">VINGATARAMIN Ludovic</h1>
+    <div class="container">
+        <header class="text-center mb-4">
+            <h1 class="header-name">VINGATARAMIN Ludovic</h1>
+            <p class="header-title">Développeur Web Fullstack Junior</p>
+            <p class="header-description">
+                En reconversion professionnelle, je suis diplômé du titre DWWM et passionné par le développement web. Autonome, rigoureux et curieux, j'ai acquis des compétences techniques à travers des projets concrets dans le cadre de la formation. Je recherche une première expérience où je pourrai contribuer activement, progresser et m'investir sur des projets modernes et stimulants.
+            </p>
+        </header>
 
+        <div class="row row-cols-responsive g-4">
+            <!-- Colonne gauche -->
+            <aside class="col-md-4 left-column">
+                <section class="mb-4">
+                    <h2 class="section-title">Contact</h2>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-telephone-fill"></i> <a href="tel:+33762523912">07 62 52 39 12</a> </li>
+                        <li><i class="bi bi-envelope-fill"></i> <a href="mailto:vinga.ludovic@gmail.com">vinga.ludovic@gmail.com</a> </li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Lésigny, France</li>
+                        <li><i class="bi bi-github"></i> <a href="https://github.com/LudovicVinga" target="_blank" rel="noopener">Mon GitHub</a></li>
+                        <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/ludovic-vingataramin" target="_blank" rel="noopener">Mon Linkedin</a></li>
+                    </ul>
+                </section>
 
+                <section class="mb-4">
+                    <div class="mb-4">
+                        <h2 class="section-title">Compétences</h2>
+                        <!-- Langages et frameworks -->
+                        <div class="mb-3">
+                            <strong class="d-block mb-1 text-primary">Langages & Frameworks</strong>
+                            <span class="badge skill-badge">HTML5</span>
+                            <span class="badge skill-badge">CSS3</span>
+                            <span class="badge skill-badge">Bootstrap 5</span>
+                            <span class="badge skill-badge">JavaScript</span>
+                            <span class="badge skill-badge">PHP</span>
+                            <span class="badge skill-badge">Symfony 7</span>
+                            <span class="badge skill-badge">SQL</span>
+                            <span class="badge skill-badge">MySQL</span>
+                        </div>
+                        <!-- Sécurité -->
+                        <div class="mb-3">
+                            <strong class="d-block mb-1 text-primary">Sécurité</strong>
+                            <span class="badge skill-badge">Protection XSS</span>
+                            <span class="badge skill-badge">Protection CSRF</span>
+                            <span class="badge skill-badge">Access Control</span>
+                        </div>
+                        <!-- Référencement SEO -->
+                        <div class="mb-3">
+                            <strong class="d-block mb-1 text-primary">SEO</strong>
+                            <span class="badge skill-badge">Balises meta</span>
+                            <span class="badge skill-badge">sitemap.xml</span>
+                            <span class="badge skill-badge">robots.txt</span>
+                        </div>
+                        <!-- Méthodologies -->
+                        <div class="mb-3">
+                            <strong class="d-block mb-1 text-primary">Méthodologies</strong>
+                            <span class="badge skill-badge">Agile Scrum</span>
+                            <span class="badge skill-badge">Merise</span>
+                        </div>
+                        <!-- Outils collaboratifs & conceptuels -->
+                        <div>
+                            <strong class="d-block mb-1 text-primary">Outils collaboratifs & conceptuels</strong>
+                            <span class="badge skill-badge">GitHub</span>
+                            <span class="badge skill-badge">Trello</span>
+                            <span class="badge skill-badge">DrawSQL</span>
+                            <span class="badge skill-badge">Balsamiq Mockup</span>
+                        </div>
+                    </div>
+                </section>
+            </aside>
 
-    <!-- Script Bootstrap 5 -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+            <!-- Colonne droite -->
+            <section class="col-md-8">
+                <!-- Expériences & Projets -->
+                <section class="mb-4">
+                    <h2 class="section-title">Expériences & Projets</h2>
+
+                    <article class="mb-3">
+                        <h3 class="experience-title">Ultra-PSG (Projet d'examen)</h3>
+                        <ul>
+                            <li>Conception : Cahier des charges, méthode MERISE et Agile, maquettage.</li>
+                            <li>Blog développé avec Symfony 7 et Bootstrap 5 (Responsive design).</li>
+                            <li>CRUD : gestion d'articles, d'utilisateurs, de catégories, de commentaires.</li>
+                            <li>Sécurité : CSRF, XSS, access control, injection SQL.</li>
+                            <li>SEO</li>
+                            <li>Versioning avec GitHub</li>
+                        </ul>
+                    </article>
+
+                    <article class="mb-3">
+                        <h3 class="experience-title">EcoRadar (application éco-responsable)</h3>
+                        <ul>
+                            <li>2025 : Pour la société EVE'NFASHION (Champs-Elysées, Paris)</li>
+                            <li>En charge du développement côté Back-end</li>
+                            <li>Création de la base de données, mise en place du système d'authentification</li>
+                            <li>Mailer service (confirmation d'inscription par mail à l'utilisateur, mail de notification à l'administrateur lorsqu'un utilisateur le contacte via un formulaire)</li>
+                            <li>CRUD</li>
+                            <li>Mode maintenance</li>
+                        </ul>
+
+                    </article>
+                    <article class="mb-3">
+                        <h3 class="experience-title">Agent de sûreté aéroportuaire</h3>
+                        <ul>
+                            <li>2010 > 2024 : Agent de sûreté aéroportuaire - Aéroport Roissy CDG</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- Formation -->
+                <section>
+                    <h2 class="section-title">Formation</h2>
+                    <p><strong>2025 - Titre professionnel DWWM - Développeur Web et Web Mobile</strong> [ALT-RH formation, La Rochette]</p>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- JS Bootstrap v5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
